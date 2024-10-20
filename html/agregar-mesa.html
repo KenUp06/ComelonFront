@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Mesa - Admin</title>
+    <link rel="stylesheet" href="../css/agregar-mesa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Mesa</h1>
+        <form id="mesaForm">
+            <div class="form-group">
+                <label for="num_mesa">Número de Mesa:</label>
+                <input type="number" id="num_mesa" name="num_mesa" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="capacidad">Capacidad:</label>
+                <input type="number" id="capacidad" name="capacidad" min="1" max="20" required>
+            </div>
+            <div class="form-group">
+                <label for="ubicacion">Ubicación:</label>
+                <select id="ubicacion" name="ubicacion" required>
+                    <option value="interior">Interior</option>
+                    <option value="exterior">Exterior</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Agregar Mesa</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="mesa.js"></script>
+</body>
+</html>
